@@ -1,0 +1,482 @@
+/* ===== RESET ===== */ 
+ 
+* { 
+  box-sizing: border-box; 
+} 
+ 
+body { 
+  margin: 0; 
+  font-family: Arial, sans-serif; 
+  background: #fff4f8; 
+  color: #4b3445; 
+  line-height: 1.6; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* HEADER */ 
+/* ================================================= */ 
+ 
+.site-header { 
+  height: 50px; 
+  background: #ffb6d9; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 20px; 
+} 
+ 
+ 
+/* Nama toko */ 
+ 
+.brand { 
+  color: #7b2d5c; 
+  font-size: 20px; 
+  font-weight: bold; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* NAVIGASI */ 
+/* ================================================= */ 
+ 
+.site-nav ul { 
+  list-style: none; 
+  display: flex; 
+  margin: 0; 
+  padding: 0; 
+} 
+ 
+.site-nav li { 
+  margin: 0; 
+} 
+ 
+.site-nav a { 
+  display: block; 
+  color: #4b3445; 
+  text-decoration: none; 
+  padding: 13px 16px; 
+  font-size: 17px; 
+} 
+ 
+ 
+/* Ketika mouse diarahkan */ 
+ 
+.site-nav a:hover { 
+  background: #ff8fb8; 
+  color: white; 
+} 
+ 
+ 
+/* Halaman yang sedang aktif */ 
+ 
+.site-nav a.active { 
+  background: #ff6f9f; 
+  color: white; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* SAMPUL */ 
+/* ================================================= */ 
+ 
+.sampul { 
+  height: 650px; 
+  position: relative; 
+  overflow: hidden; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+} 
+ 
+ 
+/* Background sampul */ 
+ 
+.background-image { 
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  z-index: 0; 
+} 
+ 
+ 
+/* Membuat background lebih gelap */ 
+ 
+.sampul::after { 
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: rgba(91, 45, 75, 0.45); 
+  z-index: 1; 
+} 
+ 
+ 
+/* Isi sampul */ 
+ 
+.hero-teks { 
+  position: relative; 
+  z-index: 2; 
+  color: white; 
+  width: 700px; 
+  padding: 20px; 
+} 
+ 
+ 
+/* Foto tengah */ 
+ 
+.hero-image { 
+  width: 640px; 
+  height: 400px; 
+  object-fit: cover; 
+  display: block; 
+  margin: 0 auto 35px auto; 
+} 
+ 
+ 
+/* Judul */ 
+ 
+.hero-teks h1 { 
+  font-size: 40px; 
+  margin: 0 0 15px; 
+  color: #fff6a8; 
+} 
+ 
+ 
+/* Deskripsi */ 
+ 
+.hero-teks p { 
+  font-size: 18px; 
+  color: white; 
+  margin-bottom: 25px; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* BUTTON */ 
+/* ================================================= */ 
+ 
+.btn, 
+button { 
+  display: inline-block; 
+  background: #ff6f9f; 
+  color: white; 
+  border: none; 
+  padding: 12px 22px; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  cursor: pointer; 
+  font-size: 16px; 
+} 
+ 
+.btn:hover, 
+button:hover { 
+  background: #c94f83; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* MAIN */ 
+/* ================================================= */ 
+ 
+main { 
+  max-width: 1100px; 
+  margin: auto; 
+  padding: 35px 20px; 
+} 
+ 
+section { 
+  margin-bottom: 55px; 
+} 
+ 
+section h2 { 
+  color: #9b3f70; 
+  margin-bottom: 20px; 
+  font-size: 28px; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* GRID */ 
+/* ================================================= */ 
+ 
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* CARD */ 
+/* ================================================= */ 
+ 
+.card { 
+  background: #ffffff; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 3px 10px rgba(180, 75, 125, 0.15); 
+} 
+ 
+.card h3 { 
+  color: #9b3f70; 
+} 
+ 
+.card img { 
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+} 
+ 
+.card strong { 
+  color: #e05283; 
+  font-size: 18px; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* GALERI */ 
+/* ================================================= */ 
+ 
+.galeri { 
+  grid-template-columns: repeat(4, 1fr); 
+} 
+ 
+.galeri figure { 
+  margin: 0; 
+  background: #ffffff; 
+  padding: 10px; 
+  border-radius: 10px; 
+  box-shadow: 0 3px 10px rgba(180, 75, 125, 0.15); 
+} 
+ 
+.galeri img { 
+  width: 100%; 
+  height: 160px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+} 
+ 
+.galeri figcaption { 
+  text-align: center; 
+  padding: 8px; 
+  font-weight: bold; 
+  color: #7b2d5c; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* ORDER BOX */ 
+/* ================================================= */ 
+ 
+.order-box { 
+  background: #ffe0ec; 
+  text-align: center; 
+  padding: 40px; 
+  border-radius: 12px; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* JUDUL HALAMAN */ 
+/* ================================================= */ 
+ 
+.page-title { 
+  text-align: center; 
+  background: #ffe0ec; 
+  padding: 45px 20px; 
+  border-radius: 12px; 
+} 
+ 
+.page-title h1 { 
+  color: #9b3f70; 
+  font-size: 35px; 
+  margin-bottom: 5px; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* FORM */ 
+/* ================================================= */ 
+ 
+form { 
+  max-width: 700px; 
+  margin: auto; 
+} 
+ 
+fieldset { 
+  border: 1px solid #f0a8c6; 
+  background: white; 
+  padding: 25px; 
+  border-radius: 12px; 
+} 
+ 
+legend { 
+  color: #9b3f70; 
+  font-size: 20px; 
+  font-weight: bold; 
+  padding: 0 10px; 
+} 
+ 
+label { 
+  display: block; 
+  margin-top: 15px; 
+  margin-bottom: 5px; 
+  font-weight: bold; 
+  color: #6d4059; 
+} 
+ 
+input, 
+select, 
+textarea { 
+  width: 100%; 
+  padding: 11px; 
+  border: 1px solid #e7a7c2; 
+  border-radius: 7px; 
+  font-family: Arial, sans-serif; 
+} 
+ 
+textarea { 
+  resize: vertical; 
+} 
+ 
+form button { 
+  margin-top: 20px; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* ABOUT */ 
+/* ================================================= */ 
+ 
+.about-section { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 35px; 
+  align-items: center; 
+} 
+ 
+.about-image img { 
+  width: 100%; 
+  height: 350px; 
+  object-fit: cover; 
+  border-radius: 12px; 
+} 
+ 
+.about-text { 
+  background: white; 
+  padding: 25px; 
+  border-radius: 12px; 
+  box-shadow: 0 3px 10px rgba(180, 75, 125, 0.15); 
+} 
+ 
+ 
+/* ================================================= */ 
+/* CONTACT */ 
+/* ================================================= */ 
+ 
+.contact { 
+  background: white; 
+  padding: 30px; 
+  border-radius: 12px; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* FOOTER */ 
+/* ================================================= */ 
+ 
+.site-footer { 
+  background: #7b2d5c; 
+  color: white; 
+  text-align: center; 
+  padding: 30px 20px; 
+} 
+ 
+.site-footer a { 
+  color: #fff6a8; 
+} 
+ 
+ 
+/* ================================================= */ 
+/* RESPONSIVE */ 
+/* ================================================= */ 
+ 
+@media (max-width: 800px) { 
+ 
+  .site-header { 
+    height: auto; 
+    flex-direction: column; 
+    padding: 10px; 
+  } 
+ 
+ 
+  .site-nav ul { 
+    flex-wrap: wrap; 
+    justify-content: center; 
+  } 
+ 
+ 
+  .grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  } 
+ 
+ 
+  .galeri { 
+    grid-template-columns: repeat(2, 1fr); 
+  } 
+ 
+ 
+  .about-section { 
+    grid-template-columns: 1fr; 
+  } 
+ 
+ 
+  .hero-image { 
+    width: 90%; 
+    height: 300px; 
+  } 
+ 
+} 
+ 
+ 
+@media (max-width: 500px) { 
+ 
+  .grid { 
+    grid-template-columns: 1fr; 
+  } 
+ 
+ 
+  .galeri { 
+    grid-template-columns: 1fr; 
+  } 
+ 
+ 
+  .sampul { 
+    height: 600px; 
+  } 
+ 
+ 
+  .hero-image { 
+    width: 100%; 
+    height: 240px; 
+  } 
+ 
+ 
+  .hero-teks h1 { 
+    font-size: 30px; 
+  } 
+ 
+ 
+  .hero-teks p { 
+    font-size: 16px; 
+  } 
+ 
+}

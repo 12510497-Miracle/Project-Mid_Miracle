@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Order Sweet Miracle Bakery."
+    />
+
+    <title>Order - Sweet Miracle Bakery</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- ===== HEADER & NAVIGASI ===== -->
+    <header class="site-header">
+
+      <div class="brand">
+        Sweet Miracle Bakery
+      </div>
+
+      <nav class="site-nav">
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="menu.html">
+              Menu
+            </a>
+          </li>
+
+          <li>
+            <a class="active" href="order.html">
+              Order
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html">
+              About
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <!-- ===== JUDUL ===== -->
+      <section class="page-title">
+
+        <h1>
+          Order Now
+        </h1>
+
+        <p>
+          Isi form berikut untuk melakukan pemesanan.
+        </p>
+
+      </section>
+
+
+      <!-- ===== FORM PEMESANAN ===== -->
+      <section>
+
+        <h2>
+          Order Form
+        </h2>
+
+
+        <form action="#" method="post">
+
+          <fieldset>
+
+            <legend>
+              Customer Information
+            </legend>
+
+
+            <label for="nama">
+              Nama
+            </label>
+
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              required
+            />
+
+
+            <label for="email">
+              Email
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+
+
+            <label for="telepon">
+              Nomor Telepon
+            </label>
+
+            <input
+              type="tel"
+              id="telepon"
+              name="telepon"
+              required
+            />
+
+
+            <label for="produk">
+              Pilih Produk
+            </label>
+
+            <select id="produk" name="produk">
+
+              <option>
+                Butter Bread - Rp 15.000
+              </option>
+
+              <option>
+                Chocolate Cookies - Rp 20.000
+              </option>
+
+              <option>
+                Strawberry Cake - Rp 45.000
+              </option>
+
+              <option>
+                Strawberry Cupcake - Rp 18.000
+              </option>
+
+            </select>
+
+
+            <label for="jumlah">
+              Jumlah
+            </label>
+
+            <input
+              type="number"
+              id="jumlah"
+              name="jumlah"
+              min="1"
+              max="50"
+              required
+            />
+
+
+            <label for="tanggal">
+              Tanggal Pengambilan
+            </label>
+
+            <input
+              type="date"
+              id="tanggal"
+              name="tanggal"
+              required
+            />
+
+
+            <label for="catatan">
+              Catatan
+            </label>
+
+            <textarea
+              id="catatan"
+              name="catatan"
+              rows="4"
+              placeholder="Contoh: tulisan pada cake..."
+            ></textarea>
+
+
+            <button type="submit">
+              Submit Order
+            </button>
+
+          </fieldset>
+
+        </form>
+
+      </section>
+
+    </main>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+
+      <p>
+        <strong>Sweet Miracle Bakery</strong>
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:sweetmiraclebakery@miracle.com">
+          sweetmiraclebakery@miracle.com
+        </a>
+      </p>
+
+      <p>
+        Telp:
+        <a href="tel:+6281248340906">
+          0812-4834-0906
+        </a>
+      </p>
+
+    </footer>
+
+  </body>
+</html>
